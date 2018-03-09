@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','StaticPagesController@home');
 
-Route::get('/logistics','Test\Logistics@test');
+Route::get('/help','StaticPagesController@help');
 
-Route::get('/query','Test\Logistics@getPlacingOrders');
-
-Route::get('/testUse','Test\Query@test');
-
-//Route::get('/query','Test\Logistics@track');
+Route::get('/abut','StaticPagesController@abut');
